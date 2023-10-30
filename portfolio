@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: seashell;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right; 
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 20px 0px rgba(7, 6, 6, 0.989);
+    transition: 1.5s;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.detail {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detail h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: orange;
+}
+
+.detail p {
+    color: #555;
+    line-height: 22px;
+}
+.detail a {
+    background: #000;
+    padding: 10px 18px;
+     text-decoration: none;
+     font-weight: bold;
+     color: #fff;
+     display: inline-block;
+     margin: 30px 0;
+     border-radius: 5px;
+}
+
+.image {
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">HIRE ME</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div class="detail">
+            <h1>I am <span>Ashwin Dubey</span></h1>
+            <p>This is my personal portfolio to shows all
+                 <br>details and work experience in web development.</p>
+                 <a href="#">DOWNLOAD CV</a>
+                 <div class="image">
+                    <img src="ashwin.jpg" height="120%" width="120%" class="shape">
+                    <img src="" class="boy">
+                 </div>
+        </div>
+    </div>
+
+</body>
+</html>
